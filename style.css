@@ -81,6 +81,7 @@ header > nav {
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -92,11 +93,12 @@ header > nav {
         display: none;
         flex-direction: column;
         background-color: #444;
-        width: 100%;
+        width: 200px;
         position: absolute;
         top: 70px;
-        left: 0;
-        padding: 1px 0;
+        right: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 
     #menu-toggle:checked + .menu-icon + #nav-links {
@@ -116,9 +118,14 @@ header > nav {
         color: white;
         background-color: #333;
         border-radius: 5px;
+        margin: 1px;
     }
 
     #nav-links li a:hover {
         background-color: #666;
+    }
+
+    #register, #login {
+        background-color: #f1f1f1;
     }
 }
