@@ -150,3 +150,16 @@ header > nav {
         transition: .3s !important;
     }
 }
+
+main > div.thumbnail {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main > div.thumbnail > img{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 300px;
+}
