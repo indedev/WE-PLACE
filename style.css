@@ -151,15 +151,37 @@ header > nav {
     }
 }
 
-main > div.thumbnail {
+main > div.inicio {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 10px;
+    gap: 20px;
 }
 
-main > div.thumbnail > img{
+main > div.inicio-texto {
+    flex: 1;
+    text-align: left;
+}
+
+main > div.inicio img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+main > div.main-images {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+main > div.main-images > img{
+    max-width: 300px;
+    margin-top: 100px;
 }
