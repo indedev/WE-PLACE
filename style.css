@@ -151,6 +151,96 @@ header > nav {
     }
 }
 
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-1);
+    padding: 10px 0;
+    z-index: 10;
+    min-width: 150px;
+    margin-top: 25px;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: var(--color-2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .submenu {
+        position: static;
+        background-color: #333;
+        padding: 0;
+        margin-top: 5px;
+        border-radius: 0;
+    }
+
+    .submenu li a {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border-top: 1px solid #444;
+    }
+
+    .submenu li a:hover {
+        background-color: #666;
+    }
+
+    .dropdown:hover .submenu {
+        display: none;
+    }
+
+    .dropdown:has(:hover) .submenu,
+    .dropdown:focus-within .submenu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    main > div.inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main > div.inicio > div.inicio-texto {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    main > div.inicio > div.inicio-texto > p {
+        text-align: justify;
+        width: 450px;
+        text-indent: 20px;
+    }
+
+    main > div.inicio img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
 main > div.inicio {
     display: flex;
     align-items: center;
@@ -164,6 +254,11 @@ main > div.inicio {
 main > div.inicio-texto {
     flex: 1;
     text-align: left;
+}
+
+main > div.inicio > div.inicio-texto > p {
+    text-align: justify;
+    text-indent: 20px;
 }
 
 main > div.inicio img {
@@ -183,5 +278,7 @@ main > div.main-images {
 
 main > div.main-images > img{
     max-width: 300px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
