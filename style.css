@@ -93,6 +93,7 @@ header > nav {
 }
 
 @media (max-width: 768px) {
+
     .menu-icon {
         display: block;
     }
@@ -151,6 +152,15 @@ header > nav {
     }
 }
 
+.dropdown :hover {
+    background-color: #444;
+}
+
+.dropdown::after {
+    content: "▼";
+    color: #fff;
+}
+
 .dropdown {
     position: relative;
 }
@@ -164,7 +174,6 @@ header > nav {
     padding: 10px 0;
     z-index: 10;
     min-width: 150px;
-    margin-top: 25px;
 }
 
 .submenu li {
@@ -230,7 +239,7 @@ header > nav {
 
     main > div.inicio > div.inicio-texto > p {
         text-align: justify;
-        width: 450px;
+        max-width: 440px;
         text-indent: 20px;
     }
 
