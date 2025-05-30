@@ -155,10 +155,6 @@ header > nav {
     position: relative;
 }
 
-.dropdown:hover {
-    background-color: #444;
-}
-
 .submenu {
     display: none;
     position: absolute;
