@@ -95,6 +95,122 @@ header > nav {
 }
 
 @media (max-width: 768px) {
+
+
+
+    .menu-icon {
+
+        display: block;
+
+    }
+
+
+
+    #nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        background-color: #444;
+
+        width: 200px;
+
+        position: absolute;
+
+        top: 70px;
+
+        right: 0;
+
+        padding: 5px 10px;
+
+        border-radius: 5px;
+
+    }
+
+
+
+    #menu-toggle:checked + .menu-icon + #nav-links {
+
+        display: flex;
+
+    }
+
+
+
+    #nav-links li {
+
+        width: 100%;
+
+        text-align: center;
+
+        margin: 5px 0;
+
+    }
+
+
+
+    #nav-links li a {
+
+        display: block;
+
+        padding: 10px;
+
+        text-align: center;
+
+        color: white;
+
+        background-color: #333;
+
+        border-radius: 5px;
+
+        margin: 1px;
+
+    }
+
+
+
+    #nav-links li a:hover {
+
+        background-color: #666;
+
+    }
+
+
+
+    #nav-links #login, 
+
+    #nav-links #register {
+
+        background-color: #f1f1f1 !important;
+
+        color: #444 !important;
+
+    }
+
+    #nav-links #login:hover {
+
+        background-color: #666 !important;
+
+        color: #f1f1f1 !important;
+
+        transition: .3s !important;
+
+    }
+
+    #nav-links #register:hover {
+
+        background-color: coral !important;
+
+        color: #f1f1f1 !important;
+
+        transition: .3s !important;
+
+    }
+
+}
+
+@media (max-width: 768px) {
     .menu-button {
         display: block;
     }
