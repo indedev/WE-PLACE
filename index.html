@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="website icon" type="image/png" href="imagens/WE PLACE.png">
     <title>WE PLACE</title>
 </head>
@@ -11,12 +12,16 @@
     <header>
         <nav>
             <h1>WE PLACE</h1>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <button class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                &#9776;
+            </button>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li class="dropdown"><a href="#">Categories</a>
-                    <ul class="submenu">
+                <li class="dropdown">
+                    <button class="dropdown-button" aria-expanded="false" aria-controls="categories-menu">
+                        Categories
+                    </button>
+                    <ul id="categories-menu" class="submenu">
                         <li><a href="#">Exemplo 1</a></li>
                         <li><a href="#">Exemplo 2</a></li>
                         <li><a href="#">Exemplo 3</a></li>
@@ -24,31 +29,13 @@
                 </li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
-                <li><a id="login" href="usuario/login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li><a id="login" href="usuario/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                 <li><a id="register" href="usuario/cadastro.html"><i class="fas fa-user-plus"></i> Register</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="inicio">
-            <div class="inicio-texto">
-                <h1>Titulo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est rem aliquid ipsam labore hic veritatis nulla deleniti illum ea, optio tenetur, libero, dolorem architecto sit esse nobis culpa. Nobis, tenetur?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti amet tempora nisi. Voluptatum ex enim corrupti aspernatur dolor, magni deserunt, quia ullam explicabo, tempore amet totam dignissimos mollitia hic nam!
-                </p>
-            </div>
-        <img src="imagens/teste.png">
-    </div>
-
-        <div class="main-images">
-            <img src="imagens/teste.png">
-            <img src="imagens/teste.png">
-            <img src="imagens/teste.png">
-            <img src="imagens/teste.png">
-            <img src="imagens/teste.png">
-            <img src="imagens/teste.png">
-        </div>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
