@@ -3,6 +3,20 @@ html {
     scroll-behavior: smooth;
 }
 
+.menu-icon {
+
+    display: none;
+
+    font-size: 1.5rem;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+}
+
 .menu-button {
     display: none;
     background: none;
