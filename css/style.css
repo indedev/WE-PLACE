@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 .menu-button {
     display: none;
     background: none;
