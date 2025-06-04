@@ -1,88 +1,80 @@
-
 html {
     scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --color-1: #444;
-    --color-2: #666;
-    --color-3: #f1f1f1;
-    --color-body: #f2f2f2;
-    --color-4: #a0a0a0;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: "Poppins";
-    background-color: var(--color-body);
-}
-
-header {
-    width: 100%;
-}
-
-header nav ul a {
-    text-decoration: none;
-    color: var(--color-3);
-    padding: 5px;
-}
-
-header > nav > ul > li > a:hover {
-    background-color: var(--color-2);
-    transition: .3s;
-}
-
-header > nav > ul > li > a {
-    padding: 10px;
-    border-radius: 5px;
-}
-
-header > nav > h1 {
-    color: white;
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
     cursor: pointer;
 }
 
-header > nav > ul {
+.nav-links {
+    display: flex;
     list-style: none;
-    display: flex;
+    margin: 0;
+    padding: 0;
     align-items: center;
+    gap: 20px;
 }
 
-header > nav {
-    background-color: var(--color-1);
-    justify-content: space-between;
-    display: flex;
-    padding: 20px;
+.nav-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-#register, #login{
-    background-color: var(--color-3);
-    border-radius: 5px;
-    color: var(--color-1);
-    margin-left: 10px;
-    padding: 10px;
-    font-family: "Poppins";
-    font-weight: 500;
+.nav-links a:hover {
+    background-color: #666;
 }
 
-#register:hover {
-    background-color: coral;
-    color: var(--color-3);
-    transition: .3s;
+.dropdown {
+    position: relative;
 }
 
-#login:hover {
-    background-color: var(--color-4);
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
     color: white;
-    transition: .3s;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .menu-button {
@@ -95,162 +87,20 @@ header > nav {
 }
 
 @media (max-width: 768px) {
-
-
-
-    .menu-icon {
-
-        display: block;
-
-    }
-
-
-
-    #nav-links {
-
-        display: none;
-
-        flex-direction: column;
-
-        background-color: #444;
-
-        width: 200px;
-
-        position: absolute;
-
-        top: 70px;
-
-        right: 0;
-
-        padding: 5px 10px;
-
-        border-radius: 5px;
-
-    }
-
-
-
-    #menu-toggle:checked + .menu-icon + #nav-links {
-
-        display: flex;
-
-    }
-
-
-
-    #nav-links li {
-
-        width: 100%;
-
-        text-align: center;
-
-        margin: 5px 0;
-
-    }
-
-
-
-    #nav-links li a {
-
-        display: block;
-
-        padding: 10px;
-
-        text-align: center;
-
-        color: white;
-
-        background-color: #333;
-
-        border-radius: 5px;
-
-        margin: 1px;
-
-    }
-
-
-
-    #nav-links li a:hover {
-
-        background-color: #666;
-
-    }
-
-
-
-    #nav-links #login, 
-
-    #nav-links #register {
-
-        background-color: #f1f1f1 !important;
-
-        color: #444 !important;
-
-    }
-
-    #nav-links #login:hover {
-
-        background-color: #666 !important;
-
-        color: #f1f1f1 !important;
-
-        transition: .3s !important;
-
-    }
-
-    #nav-links #register:hover {
-
-        background-color: coral !important;
-
-        color: #f1f1f1 !important;
-
-        transition: .3s !important;
-
-    }
-
-}
-
-@media (max-width: 768px) {
     .menu-button {
         display: block;
     }
-
-    #nav-links {
+    
+    .nav-links {
         display: none;
-        flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--color-1);
-        padding: 20px;
+        background-color: #444;
     }
-
-    #nav-links.is-open {
+    
+    .nav-links.is-open {
         display: flex;
-    }
-}
-
-.dropdown {
-    position: relative;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--color-1);
-    min-width: 150px;
-    z-index: 100;
-}
-
-.submenu.is-open {
-    display: block;
-}
-
-@media (min-width: 769px) {
-    .dropdown:hover .submenu {
-        display: block;
     }
 }
