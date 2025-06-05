@@ -51,6 +51,11 @@ nav {
     position: relative;
 }
 
+.dropdown-button {
+    border: none;
+    
+}
+
 .submenu {
     display: none;
     position: absolute;
