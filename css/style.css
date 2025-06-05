@@ -16,7 +16,7 @@ nav {
     position: relative;
 }
 
-.logo h1 {
+.logo > h1 {
     color: white;
     margin: 0;
     cursor: pointer;
@@ -31,7 +31,7 @@ nav {
     gap: 20px;
 }
 
-.nav-links a {
+.nav-links > a {
     color: #f1f1f1;
     text-decoration: none;
     padding: 8px 12px;
@@ -39,7 +39,11 @@ nav {
     transition: background-color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links > ul {
+    list-style: none;
+}
+
+.nav-links > a:hover {
     background-color: #666;
 }
 
