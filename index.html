@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE PLACE - Encontre e ofereça serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                    <h1 class="text-2xl font-bold">WE PLACE</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-200 font-medium">Início</a>
+                    <a href="#" class="hover:text-blue-200 font-medium">Serviços</a>
+                    <a href="#" class="hover:text-blue-200 font-medium">Como funciona</a>
+                    <a href="#" class="hover:text-blue-200 font-medium">Sobre nós</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-full font-medium hover:bg-blue-50 transition">
+                        Entrar
+                    </button>
+                    <button class="hidden md:block bg-blue-700 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-800 transition">
+                        Cadastrar serviço
+                    </button>
+                    <button class="md:hidden text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Encontre os melhores serviços perto de você</h1>
+                <p class="text-xl mb-8">Conectamos quem precisa de serviços com quem oferece. Simples, rápido e seguro.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-50 transition">
+                        Buscar serviços
+                    </button>
+                    <button class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-800 transition">
+                        Oferecer serviços
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Pessoas oferecendo serviços" 
+                     class="rounded-xl shadow-2xl max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12 -mt-8">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">O que você precisa hoje?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="md:col-span-3">
+                        <input type="text" placeholder="Ex: Encanador, Designer, Aulas de música..." 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Localização" 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-between items-center">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+                        <i class="fas fa-search mr-2"></i> Buscar
+                    </button>
+                    <a href="#" class="text-blue-600 hover:underline">Filtros avançados</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Categorias populares</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Reparos</h3>
+                </div>
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-paint-brush text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Beleza</h3>
+                </div>
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-music text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Música</h3>
+                </div>
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-laptop-code text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Tecnologia</h3>
+                </div>
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-dumbbell text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Fitness</h3>
+                </div>
+                <div class="category-chip bg-white p-4 rounded-xl shadow-md text-center cursor-pointer">
+                    <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                        <i class="fas fa-car text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium">Automotivo</h3>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button class="text-blue-600 font-medium hover:underline">
+                    Ver todas categorias <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Serviços em destaque</h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Design de interiores" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md">
+                            <i class="far fa-heart text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Design de Interiores</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Novo</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Transforme seus espaços com designs personalizados e funcionais.</p>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span class="font-medium">4.9</span>
+                            <span class="text-gray-500 text-sm ml-1">(128 avaliações)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                                <span class="text-sm text-gray-600">São Paulo, SP</span>
+                            </div>
+                            <span class="font-bold text-blue-600">R$ 120/h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                             alt="Encanador" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md">
+                            <i class="far fa-heart text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Encanador Profissional</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Resolvo vazamentos, instalações e manutenções hidráulicas.</p>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span class="font-medium">4.8</span>
+                            <span class="text-gray-500 text-sm ml-1">(256 avaliações)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                                <span class="text-sm text-gray-600">Rio de Janeiro, RJ</span>
+                            </div>
+                            <span class="font-bold text-blue-600">R$ 90/h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Fotógrafo" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md">
+                            <i class="far fa-heart text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Fotografia Profissional</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Premium</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Fotos incríveis para eventos, produtos e retratos.</p>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                            <span class="text-gray-500 text-sm ml-1">(89 avaliações)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                                <span class="text-sm text-gray-600">Belo Horizonte, MG</span>
+                            </div>
+                            <span class="font-bold text-blue-600">R$ 150/h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Aulas de inglês" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md">
+                            <i class="far fa-heart text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Aulas de Inglês</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Promoção</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Aulas personalizadas para todos os níveis, do básico ao avançado.</p>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span class="font-medium">4.7</span>
+                            <span class="text-gray-500 text-sm ml-1">(73 avaliações)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                                <span class="text-sm text-gray-600">Porto Alegre, RS</span>
+                            </div>
+                            <span class="font-bold text-blue-600">R$ 80/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+                    Ver mais serviços
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Como funciona</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center px-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1. Encontre</h3>
+                    <p class="text-gray-600">Busque pelo serviço que você precisa ou navegue pelas categorias disponíveis.</p>
+                </div>
+                <div class="text-center px-6">
+                    <div class="bg-purple-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2. Contrate</h3>
+                    <p class="text-gray-600">Entre em contato com o profissional, negocie os detalhes e feche o serviço.</p>
+                </div>
+                <div class="text-center px-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-check-circle text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3. Avalie</h3>
+                    <p class="text-gray-600">Após a conclusão, avalie o serviço recebido e ajude outros usuários.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que dizem sobre nós</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                             alt="Cliente satisfeito" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Carolina</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Encontrei um excelente designer de interiores pelo WE PLACE. O serviço foi impecável e o preço justo. Recomendo muito!"</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Cliente satisfeito" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ricardo Almeida</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Como prestador de serviços, o WE PLACE me ajudou a encontrar muitos clientes. A plataforma é fácil de usar e os pagamentos são seguros."</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                             alt="Cliente satisfeito" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Juliana Santos</h4>
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Precisava urgentemente de um encanador e encontrei um ótimo profissional no WE PLACE. Resolveu meu problema rapidamente e com preço justo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para encontrar ou oferecer serviços?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Junte-se a milhares de pessoas que já usam o WE PLACE para conectar necessidades e habilidades.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition">
+                    Buscar serviços
+                </button>
+                <button class="bg-blue-800 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-900 transition">
+                    Cadastrar serviço
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-blue-400"></i>
+                        <h3 class="text-xl font-bold">WE PLACE</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Conectando pessoas a serviços de qualidade em todo o Brasil.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sobre nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Carreiras</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ajuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Termos de uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">contato@weplace.com.br</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">(11) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">São Paulo, Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>© 2023 WE PLACE. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6">
+        <button class="bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg hover:bg-blue-700 transition flex items-center justify-center">
+            <i class="fas fa-plus text-xl"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
